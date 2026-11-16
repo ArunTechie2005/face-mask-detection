@@ -1,7 +1,7 @@
 FROM python:3.11-slim
 
 # libglib is needed by OpenCV even in the headless build
-RUN apt-get update && apt-get install -y --no-install-recommends libglib2.0-0 \
+RUN apt-get update && apt-get install -y --no-install-recommends libglib2.0-0 libxcb1 libgl1 libsm6 libxext6 libxrender1 \
     && rm -rf /var/lib/apt/lists/*
 
 RUN useradd -m -u 1000 user
