@@ -1,5 +1,7 @@
 # Real-Time Face Mask Detection (YOLO11, fine-tuned)
 
+Built with Ultralytics YOLO11, trained on the Kaggle Face Mask Detection dataset.
+
 Detects whether people in **images, folders, videos and live webcam feeds** wear a mask correctly.
 
 | Class | Colour | Meaning |
